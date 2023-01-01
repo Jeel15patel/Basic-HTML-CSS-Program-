@@ -1,0 +1,49 @@
+<!-- Write HTML & CSS script to design one banner of advertisement using <p> tag. That text of advertise should move continuously
+from left end to right end, then return back from right to left end.Use red and huge fonts for text. Advertise should begin 
+after 1 second of loading page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            QB_174
+        </title>
+        <style>
+
+            div{
+                border: 3px solid black;
+                background-image: url(Border_P.png);
+            }
+
+            p{
+                animation-name: example;
+                animation-duration: 3s;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+            }
+
+            @keyframes example {
+
+                0%{
+                    margin-right: 0px;
+                }
+
+                100%{
+                    margin-left: 87%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            174
+        </h1>
+        <div>
+            <p>
+                Hello My Name is Jeel Patel
+            </p>
+        </div>
+    </body>
+</html>

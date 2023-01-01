@@ -1,0 +1,13 @@
+h2{
+    font-size: 150%;
+}
+
+body{
+    background-color: orange;
+    background-image: url(Smile_P.png);
+    background-repeat: repeat-x;
+}
+
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}

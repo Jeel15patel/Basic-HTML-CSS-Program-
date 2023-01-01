@@ -1,0 +1,42 @@
+<!-- Write a HTML & CSS script to make a hoverable link button having blue border and white background intially. While hovering,
+border should disappear and entire button button should get blue color with transition and pointer effect. Store blue color in CSS
+variable, since it is used frequently. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            QB_209
+        </title>
+        <style>
+            :root{
+                --blue:rgb(0,0,255);
+            }
+
+            button{
+                width: 200px;
+                height: 100px;
+                background-color: white;
+                border-radius: 10px;
+                border: 2px solid blue;
+                padding: 5px 1px;
+                text-align: center;
+                font-size: 20px;
+                cursor: pointer;   
+            }
+    
+            .button:hover{
+                background-color: blue;
+                border: none;
+                color: var(--blue);
+                transition-duration: 2s;
+                box-shadow: 5px 5px 8px yellow, 10px 10px 8px red, 15px 15px 8px orange;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="button" >
+            Submit 
+        </button>
+    </body>
+</html>
