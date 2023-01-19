@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Bootstrap DropDown
+            Bootstrap Collapes
         </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
@@ -13,17 +13,17 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" data-toggle= dropdown>
-                Select
+        <center>
+            <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">
+                Collapse
             </button>
-            <div class="dropdown-menu">
-                <a href="#" class="dropdown-item bg-danger">HTML</a>
-                <a href="#" class="dropdown-item bg-info">CSS</a>
-                <a href="#" class="dropdown-item bg-success">JS</a>
-                <a href="#" class="dropdown-item">JS</a>
-                <a href="#" class="dropdown-item">JS</a>
+            <div id="demo" class="collapse">
+                <p class="bg-success text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ex doloribus rerum sapiente, libero, vitae iste,cum at ad soluta animi aut 
+                    ducimus ipsa earum quasi labore omnis voluptates sit similique.
+                </p>
             </div>
-        </div>
+        </center>    
     </body>
 </html>
